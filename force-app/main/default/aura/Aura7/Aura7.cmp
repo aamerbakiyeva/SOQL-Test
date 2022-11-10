@@ -1,0 +1,9 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global">
+    
+    <aura:attribute name="text" type="String" default="Just a string, waiting for change."/>
+
+    <lightning:card>
+        <lightning:button label="Test Button" onclick="{!c.handleClick}"/>
+        <h1>{!v.text}</h1>
+    </lightning:card>
+</aura:component>
